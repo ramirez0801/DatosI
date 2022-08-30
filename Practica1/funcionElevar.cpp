@@ -12,16 +12,16 @@ int Potencia( int iBase, int iExp ){
     }
 }
 
-void Potencia2(int *pBase, int iExp){
-    int num = *pBase;
-    if(iExp == 0)
-        cout<<1<<endl;
-    else
-    {
-        *pBase = *pBase * num;
-        cout<<*pBase<<endl;
-    }
-}
+// void Potencia2(int *pBase, int iExp){
+//     int num = *pBase;
+//     if(iExp == 0)
+//         cout<<1<<endl;
+//     else
+//     {
+//         *pBase = *pBase * num;
+//         cout<<*pBase<<endl;
+//     }
+// }
 
 main()
 {
@@ -35,8 +35,8 @@ main()
     n = Potencia(5,3);
     cout<<n<<endl;
 
-    Potencia2(&num,0);
-    Potencia2(&num,1);
-    Potencia2(&num,2);
-    Potencia2(&num,3);
+    // Potencia2(&num,0);
+    // Potencia2(&num,1);
+    // Potencia2(&num,2);
+    // Potencia2(&num,3);
 }
