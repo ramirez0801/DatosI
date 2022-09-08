@@ -1,6 +1,4 @@
 #include <iostream>
-//Emmanuel Ramirez Garcia
-//05/09/22
 
 using namespace std;
 
@@ -27,20 +25,39 @@ int cuenta(char *pszCadena, char contar)
 
 void alReves(char *psz)
 {
-    int i = 0, j = 0; 
-    for(i = 0; *psz != '\0'; psz++);    
-    for(j = 0; *psz >= '\0'; j--)
+    int i = 0, j = 0;
+    char tmp[25] = { "" };
+    for (i; psz[i] != '\0'; i++);
+    //i = i - 1;
+    cout<<"i: "<<i<<endl;
+    i = i - 1;
+    while (i >= 0)
     {
-        cout<<*psz;
-        psz--;
+        tmp[j] = psz[i];
+        i--;
+        j++;
     }
+    psz = tmp;
+    cout <<"TMP1: "<<psz;
+    
+
+    // while (j > 0)
+    // {
+    //     *psz = tmp[j];
+    //     cout << tmp[j];
+    //     i++;
+    //     psz++;
+    //     j--;
+    // }
+    
 }
 
 
 
 
+
 main(){
-    char plba[25] = {"Hola mundo"},l = {'o'}, pl1[15] ={"Hola"}, pl2[15] = {"mundo"} ;
+    char plba[25] = {"Hola mundo"},l = {'o'};
     int cont = 0;
     //cout<<"Ingrese la palabra: ";
 
@@ -57,4 +74,5 @@ main(){
         cout<<"Contadas: "<<cont<<endl;
 
     alReves(plba);
+    //cout<<"Palabra: " <<plba;
 }
