@@ -52,12 +52,24 @@ void alReves(char *psz)
     
 }
 
+void concatena(char *plb1, char *plb2)
+{
+    int i;
+    for(i = 0; plb1[i] != '\0'; i++);
+    
+    for(int j = 0; plb2[j] != '\0'; j++)
+    {
+        plb1[i] = plb2[j];
+        i++;
+    }
+   
 
+}
 
 
 
 main(){
-    char plba[25] = {"Hola mundo"},l = {'o'};
+    char plba[25] = {"Hola mundo"},l = {'o'}, plba1[20] = {"hohoh"}, plba2[20] = {"mundo"};
     int cont = 0;
     //cout<<"Ingrese la palabra: ";
 
@@ -73,6 +85,6 @@ main(){
     else
         cout<<"Contadas: "<<cont<<endl;
 
-    alReves(plba);
-    //cout<<"Palabra: " <<plba;
+    concatena(plba1,plba2);
+     cout<<"Palabra: "<<plba1;
 }
