@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1617407858 source:c:\users\emmanuel r\documents\edd2021a\lista doble\main.cpp
+	"Menu.h"
+
+1617682232 source:c:\users\emmanuel r\documents\edd2021a\lista doble\src\listadoble.cpp
+	"ListaDoble.h"
+
+1617585873 c:\users\emmanuel r\documents\edd2021a\lista doble\include\listadoble.h
+	"Nodo.h"
+	<iostream>
+
+1617762173 source:c:\users\emmanuel r\documents\edd2021a\lista doble\src\menu.cpp
+	"Menu.h"
+
+1617490409 c:\users\emmanuel r\documents\edd2021a\lista doble\include\menu.h
+	"ListaDoble.h"
+	<iostream>
+
+1617490436 c:\users\emmanuel r\documents\edd2021a\lista doble\include\nodo.h
+	<iostream>
+
+1617427813 source:c:\users\emmanuel r\documents\edd2021a\lista doble\src\nodo.cpp
+	"Nodo.h"
+
