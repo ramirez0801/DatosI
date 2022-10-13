@@ -128,6 +128,10 @@ void cLista::vaciar()
       pn = pn->sig;
       delete aux;
     }
+    // delete &Inicio;
+    // delete &Final;
+    Inicio.sig = &Final;
+    Final.ant = &Inicio;
 
 }
 
@@ -169,6 +173,7 @@ int main(int argc, char const *argv[])
     list->insertarInicio(5);
     list->insertarInicio(6);
     list->insertarFinal(10);
+    list->insertarFinal(8);
     list->mostrar();
     num = list->tamanio();
     cout<<"Tamanio: "<<num<<'\n';
