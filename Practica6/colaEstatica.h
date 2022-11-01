@@ -12,6 +12,7 @@ class cColaEstatica
         float pop();
         bool isFull();
         bool isEmpty();
+        void mostrar();
 };
 
 void cColaEstatica::push(float nd)
@@ -20,6 +21,7 @@ void cColaEstatica::push(float nd)
     ie++;
     ie = ie % 50;
     cont++;
+    cout<<"IE: "<<ie<<endl;
 }
 
 float cColaEstatica::pop()
@@ -27,7 +29,15 @@ float cColaEstatica::pop()
     float R;
     R = arr[il];
     il++;
-    il % 50;
+    il %= 50;
     cont--;
+    return R;
 }
 
+void cColaEstatica::mostrar()
+{
+    for(int i = 0; i<cont; i++)
+    {
+        cout<<"Dato: ["<<i<<"]: "<<arr[i]<<endl;
+    }
+}
