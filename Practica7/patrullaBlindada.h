@@ -24,7 +24,7 @@ cPatrullaBlin::~cPatrullaBlin()
 
 void cPatrullaBlin::accelerar()
 {
-    vel =+ 1.5;
+    vel += 1.5;
     cout<<"\nAccelerando...\n";
 }
 

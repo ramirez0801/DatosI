@@ -23,17 +23,17 @@ cToreto::~cToreto()
 
 void cToreto::accelerar()
 {
-    vel =+3;
+    vel +=3;
     cout<<"\nAccelerando...\n";
 }
 
 void cToreto::turbo()
 {
-    vel =+ 10;
+    vel += 10;
     cout<<"\nTurbooooooooo\n";
 }
 
 void cToreto::imprimir()
 {
-    cout<<"Velocidad: "<<vel<<endl;
+    cout<<"\nVelocidad: "<<vel<<endl;
 }

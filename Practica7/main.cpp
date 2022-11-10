@@ -9,16 +9,16 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     menu men;
-    int opc = 1;
+    int opc = 1; //Opcion principal
     while(opc!=0)
-    {
+    {   //menu
         cout<<"\n\t1)Auto\n\t2)Patrulla\n\t3)Patrulla Blindada\n\t4)Taxi\n\t5)Toreto\n\t0)Salir\n\topc: ";
         cin>>opc;
-        int  opcM = 0;
+        int  opcM = 0;//Opcion para el miniMenu
         switch (opc)
         {
             case 1:
-            {
+            {   //Auto
                 cAuto Auto;
                 while(opcM != 3)
                 {
@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
                 break;
             }
             case 2:
-            {
+            {   //Patrulla
                 cPatrulla patru;
                 while(opcM != 3)
                 {
@@ -66,7 +66,7 @@ int main(int argc, char const *argv[])
                 break;
             }
             case 3:
-            {
+            {   //Patrulla blindada
                 cPatrullaBlin patruBlin;
                 while(opcM != 3)
                 {
@@ -90,7 +90,7 @@ int main(int argc, char const *argv[])
                 break;
             }
             case 4:
-            {
+            {   //Taxi
                 cTaxi taxi;
                 while(opcM != 3)
                 {
@@ -114,11 +114,11 @@ int main(int argc, char const *argv[])
                 break;
             }
             case 5:
-            {
+            {   //Carro de Toreto
                 cToreto toreto;
                 while(opcM != 3)
                 {
-                    cout<<"\n\t1)Accelerar\n\t2)Imprimir\n\t3)Salir\n\t\n\t4)Turbo\n\tOpc: ";
+                    cout<<"\n\t1)Accelerar\n\t2)Imprimir\n\t3)Salir\n\t4)Turbo\n\tOpc: ";
                     cin>>opcM;
                     switch (opcM)
                     {
@@ -142,7 +142,7 @@ int main(int argc, char const *argv[])
                 break;
             }
             default:
-            {
+            {   //Opcion para salir
                 if(opc == 0)
                     break;
                 else
