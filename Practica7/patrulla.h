@@ -7,7 +7,8 @@ class cPatrulla:public cAuto
         cPatrulla();
         ~cPatrulla();
         void accelerar();
-        void imprrimir();
+        virtual void imprimirV();
+        void imprimir();
 };
 
 cPatrulla::cPatrulla()
@@ -25,4 +26,14 @@ void cPatrulla::accelerar()
 {
     vel += 2;
     cout<<"\nAccelerando...";
+}
+
+void cPatrulla::imprimirV()
+{   
+    cout<<"Patrulla que va a: "<<vel<<endl;
+}
+
+void cPatrulla::imprimir()
+{
+    cout<<"Patrulla que va a: "<<vel<<endl;
 }

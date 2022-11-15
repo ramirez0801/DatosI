@@ -6,6 +6,7 @@ class cToreto:public cAuto
         cToreto();
         ~cToreto();
         void accelerar();
+        virtual void imprimirV();
         void imprimir();
         void turbo();
 };
@@ -35,5 +36,10 @@ void cToreto::turbo()
 
 void cToreto::imprimir()
 {
-    cout<<"\nVelocidad: "<<vel<<endl;
+    cout<<"\nToreto va a: "<<vel<<endl;
+}
+
+void cToreto::imprimirV()
+{
+    cout<<"\nToreto va a: "<<vel<<endl;
 }

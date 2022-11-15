@@ -6,6 +6,7 @@ class cTaxi:public cAuto
         cTaxi();
         ~cTaxi();
         void accelerar();
+        virtual void imprimirV();
         void imprimir();
 };
 
@@ -28,5 +29,10 @@ void cTaxi::accelerar()
 
 void cTaxi::imprimir()
 {
-    cout<<"\nVelocidad: "<<vel<<endl;
+    cout<<"\nTaxi que va a: "<<vel<<endl;
+}
+
+void cTaxi::imprimirV()
+{
+    cout<<"\nTaxi que va a: "<<vel<<endl;
 }

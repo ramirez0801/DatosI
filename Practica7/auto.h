@@ -12,8 +12,9 @@ class cAuto
     public:
         cAuto();
         ~cAuto();
+        virtual void imprimirV();
         void imprimir();
-        void accelerar();
+        virtual void accelerar();
 };
 
 cAuto::cAuto()
@@ -35,8 +36,15 @@ void cAuto::accelerar()
     cout<<"\nAccelerando...";
 }
 
+void cAuto::imprimirV()
+{
+    cout<<"\nAuto que va a: "<<vel;
+}
+
 void cAuto::imprimir()
 {
-    cout<<"\nVelocidad: "<<vel;
+    cout<<"\nAuto que va a: "<<vel;
 }
+
+
 

@@ -7,6 +7,7 @@ class cPatrullaBlin:public cPatrulla
     public:
         cPatrullaBlin();
         ~cPatrullaBlin();
+        virtual void imprimirV();
         void imprimir();
         void accelerar();
 };
@@ -30,6 +31,11 @@ void cPatrullaBlin::accelerar()
 
 void cPatrullaBlin::imprimir()
 {
-    cout<<"\nVelocidad: "<<vel<<endl;
+    cout<<"\nBlindado que va a: "<<vel<<endl;
+}
+
+void cPatrullaBlin::imprimirV()
+{
+    cout<<"\nBlindado que va a: "<<vel<<endl;
 }
 
